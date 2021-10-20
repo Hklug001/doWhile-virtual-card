@@ -1,5 +1,5 @@
 <h1>This is my virtual card for Rockeatset DoWhile 2021</h1>
 
-It was developed during the NLW/Heat event
+It was developed during the NLW/Heat (Next Level Week Heat) event
 
-You can acsess it here: https://hklug001.github.io/doWhile-virtualCard/
+Click <a href="https://hklug001.github.io/doWhile-virtual-card/">here</a> to view the page
