@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+}
+
 html, body{
     height: 100%;
 }
@@ -5,30 +11,72 @@ html, body{
 body{
     display: grid;
     place-items: center;
-    background: black   ;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    --grey: hsla(240, 9%, 89%, 1);
+    --black: background: hsla(240, 6%, 13%, 1);
 }
 
-h1 {
-    font-size: 1.5rem;
-    color: white;
+main{
+    background: url(images/Background.png);
+    width: 365px;
+    height: 812px;
 }
 
-a{
-    color: black;
-    text-decoration: none;
-    color: white;
+.container{
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color:var(--grey);
 }
 
-#picture{
-    width: 160px;
-    height: 160px;
-    left: 108px;
-    top: 184px;
+.avatar{
+    width: 10rem;
+    margin: 11.5rem auto 0;
+    position: relative;
+}
+
+.description{
+    margin-top: 1.5rem;
 }
 
 #stamp{
-    width: 80px;
-    height: 80px;
-    left: 108px;
-    top: 169px;
+    position: absolute;
+    top: -25px;
+    z-index: 1;
+}
+
+#picture{
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+#name{
+    font-size: 1.5rem;
+}
+
+#github{
+    margin-top: 0.25rem;
+    text-decoration: none;
+    color: var(--grey);
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+#information{
+    margin-top: 2rem;
+}
+
+.social-media{
+    margin-top: 4rem;
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    gap:0.5rem;
 }
