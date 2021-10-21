@@ -14,7 +14,7 @@ body{
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     --grey: hsla(240, 9%, 89%, 1);
-    --black: background: hsla(240, 6%, 13%, 1);
+    --black: hsla(240, 6%, 13%, 1);
 }
 
 main{
@@ -71,7 +71,7 @@ main{
     margin-top: 2rem;
 }
 
-.social-media{
+#socialMedia{
     margin-top: 4rem;
     list-style: none;
     padding: 0;

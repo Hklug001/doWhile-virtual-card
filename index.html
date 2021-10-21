@@ -23,30 +23,47 @@
                 </a>
                 <p id="information">Web Developer and Information Systems student at UTFPR</p>
             </div>
-            <ul class="social-media">
-                <li>
-                    <a href="" target="_blank">
+            <ul id="socialMedia">
+                <li class="youtube">
+                    <a href="https://www.youtube.com/channel/" target="_blank">
                         <img src="images/Group 6423.svg" alt="youtube logo">
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.instagram.com/henri_klug/" target="_blank">
+                <li class="instagram">
+                    <a href="https://www.instagram.com/" target="_blank">
                         <img src="images/Group 6424.svg" alt="instagram logo">
                     </a>
                 </li>
-                <li>
-                    <a href="" target="_blank">
+                <li class="facebook">
+                    <a href="https://www.facebook.com/" target="_blank">
                         <img src="images/Group 6422.svg" alt="facebook logo">
                     </a>
                 </li>
-                <li>
-                    <a href="https://twitter.com/KlugHenrique" target="_blank">
+                <li class="twitter">
+                    <a href="https://www.twitter.com/" target="_blank">
                         <img src="images/Group 6421.svg" alt="twitter logo">
                     </a>
                 </li>
             </ul>
         </div>
     </main>
+    <script>
+        const userNames = {
+            youtube: "UCEygkGwvkfbLilTlt96K-Lg",
+            instagram: "henri_klug",
+            facebook: "100004104861949",
+            twitter: "KlugHenrique"
+        }
+
+        function addSocialLinks() {
+            for (let li of socialMedia.children) {
+                const social = li.getAttribute('class');
+                li.children[0].href += `${userNames[social]}`;
+            }
+        }
+
+        addSocialLinks();
+    </script>
 </body>
 
 </html>
