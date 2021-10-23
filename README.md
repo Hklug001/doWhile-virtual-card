@@ -1,4 +1,4 @@
-<h1>This is my mobile version of the Rockeatset virtual card for DoWhile 2021</h1>
+<h1>This is my virtual card for Rocketseat DoWhile 2021</h1>
 
 It was developed during the NLW/Heat (Next Level Week Heat) event
 
