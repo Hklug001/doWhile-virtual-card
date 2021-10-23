@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
 *{
     margin: 0;
 }
@@ -17,10 +18,23 @@ body{
     --black: hsla(240, 6%, 13%, 1);
 }
 
-main{
-    background: url(images/Background.png);
-    width: 365px;
-    height: 812px;
+@media (min-width: 960px){
+    /*Desktop support*/
+    main{
+        background: url(images/Background.png);
+        width: 365px;
+        height: 812px;
+    }
+}
+
+@media (max-width: 720px){
+    /*Mobile support*/
+    main{
+        background: url(images/Background.png) no-repeat center/cover;
+        width: 100vw;
+        min-height: 812px;
+        height: 100vh;
+    }
 }
 
 .container{
@@ -67,6 +81,10 @@ main{
     gap: 0.75rem;
 }
 
+#github:hover{
+    transform: scale(1.1);
+}
+
 #information{
     margin-top: 2rem;
 }
@@ -79,4 +97,8 @@ main{
     display: flex;
     justify-content: center;
     gap:0.5rem;
+}
+
+.social-media-links:hover{
+    transform: scale(1.1);
 }
